@@ -153,3 +153,57 @@ for (let i = 0; i < words.length; i++) {
 }
 
 console.log(`The word "${wordToCount}" appears ${count} times in the sentence.`);
+
+
+let banyakStr = `You cannot end a sentence with because because because is a conjunction`;
+
+let cari = /because/gi
+
+console.log(banyakStr.match(cari))
+
+const kataKati = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching';
+
+// Clean the text by removing special characters and symbols
+const cleanedText = kataKati.replace(/[^\w\s]/g, '');
+
+// Split the cleaned text into an array of words
+const wir = cleanedText.split(/\s+/);
+
+// Count the frequency of each word
+const wordFrequency = {};
+words.forEach(word => {
+    word = word.toLowerCase();
+    wordFrequency[word] = (wordFrequency[word] || 0) + 1;
+});
+
+// Find the word with the highest frequency
+let mostFrequentWord = '';
+let maxFrequency = 0;
+for (const word in wordFrequency) {
+    if (wordFrequency[word] > maxFrequency) {
+        mostFrequentWord = word;
+        maxFrequency = wordFrequency[word];
+    }
+}
+
+console.log("Most frequent word:", mostFrequentWord);
+console.log("Frequency:", maxFrequency);
+
+
+const text = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
+
+// Extract numbers using regular expression
+const numbers = text.match(/\d+/g);
+
+// Convert the numbers to integers and calculate total annual income
+let totalIncome = 0;
+if (numbers) {
+    const salaryPerMonth = parseInt(numbers[0]);
+    const annualBonus = parseInt(numbers[1]);
+    const onlineCoursesPerMonth = parseInt(numbers[2]);
+    
+    totalIncome = (salaryPerMonth * 12) + annualBonus + (onlineCoursesPerMonth * 12);
+}
+
+console.log("Total annual income:", totalIncome, "euro");
+
