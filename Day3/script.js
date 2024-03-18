@@ -64,3 +64,31 @@ console.log("Seconds elapsed since January 1, 1970:", secondsElapsed);
 
 // Excercises II 
 
+
+
+// const a = parseFloat(prompt('Enter Side a')); // Convert input to a number
+// const b = parseFloat(prompt('Enter Side b')); // Convert input to a number
+// const c = parseFloat(prompt('Enter Side c')); // Convert input to a number
+
+// function perimeter(a, b, c) {
+//     return a + b + c; // Return the perimeter
+// }
+
+// const result = perimeter(a, b, c); // Calculate the perimeter
+// alert("The perimeter of the triangle is: " + result); // Display the result
+
+
+
+
+// Prompting the user to input the radius
+var radius = parseFloat(prompt("Enter the radius of the circle:"));
+
+// Calculating the area and circumference
+var pi = 3.14;
+var area = pi * radius * radius;
+var circumference = 2 * pi * radius;
+
+// Displaying the results
+console.log("For a circle with radius " + radius + ":");
+console.log("Area = " + area.toFixed(2));
+console.log("Circumference = " + circumference.toFixed(2));
