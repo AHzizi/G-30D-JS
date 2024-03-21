@@ -255,4 +255,5 @@ const todayIs = () => {
 
 todayIs()
 
-setInterval(todayIs, 1000)
+setInterval(todayIs, 1000);
+
