@@ -81,14 +81,52 @@ console.log("Seconds elapsed since January 1, 1970:", secondsElapsed);
 
 
 // Prompting the user to input the radius
-var radius = parseFloat(prompt("Enter the radius of the circle:"));
+// var radius = parseFloat(prompt("Enter the radius of the circle:"));
 
 // Calculating the area and circumference
-var pi = 3.14;
-var area = pi * radius * radius;
-var circumference = 2 * pi * radius;
+// var pi = 3.14;
+// var area = pi * radius * radius;
+// var circumference = 2 * pi * radius;
 
-// Displaying the results
-console.log("For a circle with radius " + radius + ":");
-console.log("Area = " + area.toFixed(2));
-console.log("Circumference = " + circumference.toFixed(2));
+// // Displaying the results
+// console.log("For a circle with radius " + radius + ":");
+// console.log("Area = " + area.toFixed(2));
+// console.log("Circumference = " + circumference.toFixed(2));
+
+
+// let base = parseFloat(prompt('Enter Base')); // Convert input to a number
+// let height = parseFloat(prompt('Enter Height')); // Convert input to a number
+// let result = base * height;
+
+// alert(result)
+
+// const calculateArea = () => {
+//     let base = parseFloat(prompt('Enter Base')); // Convert input to a number
+//     let height = parseFloat(prompt('Enter Height')); // Convert input to a number
+//     let result = base * height;
+//     alert(result);
+// }
+
+// calculateArea();
+
+// const calculateTriangle = () => {
+//     let sideA = parseFloat(prompt('Enter Side A')); // Convert input to a number
+//     let sideB = parseFloat(prompt('Enter Side B')); // Convert input to a number
+//     let sideC = parseFloat(prompt('Enter Side C')); // Convert input to a number
+//     let result = sideA + sideB + sideC;
+//     alert(`The Result Is ${result}`);
+// }
+
+// calculateTriangle()
+
+// const circulateRectangle = () => {
+//     let length = parseFloat(prompt('Enter Length')); // Convert input to a number
+//     let width = parseFloat(prompt('Enter Width')); // Convert input to a number
+//     let result1 = length * width;
+//     let result2 = 2 * (length + width);
+        
+//     alert(`The area of Rectangle Is ${result1}`);
+//     alert(`The primeter of Rectangle Is ${result2}`);
+// }
+
+// circulateRectangle()
