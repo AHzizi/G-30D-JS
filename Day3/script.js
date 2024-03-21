@@ -130,3 +130,129 @@ console.log("Seconds elapsed since January 1, 1970:", secondsElapsed);
 // }
 
 // circulateRectangle()
+
+// const radiusCalculateCircle = () => {
+//     let radius = parseFloat(prompt('Enter Radius')); // Convert input to a number
+//     let result = 2 * radius;
+//     let result2 = 2 * Math.PI * radius;
+//     alert(`The Circumference Of Circle Is ${result}`);
+//     alert(`The Area Of Circle Is ${Math.floor(result2)}`);
+// }
+
+// radiusCalculateCircle()
+
+// const calculateSlope = () => {
+//     let x1 = parseFloat(prompt('Enter x1')); // Convert input to a number
+//     let x2 = parseFloat(prompt('Enter x2')); // Convert input to a number
+//     let y1 = parseFloat(prompt('Enter y1')); // Convert input to a number
+//     let y2 = parseFloat(prompt('Enter y2')); // Convert input to a number
+//     let result = (y2 - y1) / (x2 - x1);
+//     alert(`The Slope Is ${result}`);
+// }
+
+// calculateSlope()
+
+// const circulatePay = () => {
+//     let inputHours = parseFloat(prompt('Enter Hours Worked')); // Convert input to a number
+//     let inputRate = parseFloat(prompt('Enter Rate')); // Convert input to a number
+//     let result = inputHours * inputRate;
+//     alert(`The Pay Is ${result}`);
+// }
+// circulatePay()
+
+// let inputUser = prompt("Enter Your Name");
+
+// if (inputUser.length >= 7) {
+//     alert(`your name is long else`);
+// } else {
+//     alert(`your name is short`);
+// }
+
+// let firstName1 = prompt("Enter Your First Name");
+// let lastName1 = prompt("Enter Your Last Name");
+
+// if (firstName1.length >= lastName1.length) {
+//     alert(`Nama Depan Lu Lebih Panjang drpd Nama belakang Lu`);
+// } else {
+//     alert(`Nama Belakang Lu Lebih Panjang Drpd Nama Belakang Lu`);
+// }
+
+// let myAge = 250;
+// let yourAge = 12;
+
+// if (myAge > yourAge) {
+//     alert(`I am ${myAge - yourAge} years older than you`);
+// } else {
+//     alert(`I am ${yourAge - myAge} years younger than you`);
+// }
+
+// const circulateAge = () => {
+//     let userInputBirthYear = parseFloat(prompt('Enter Your Birth Year')); // Convert input to a number
+//     let result = 2024 - userInputBirthYear;
+//     if (result >= 25) {
+//         alert(`You Are ${result}, You are old to enough to drive`);
+//     } else {
+//         alert(`You Are ${result} You will be allowed to drive after ${25 - result} years`);
+//     }
+
+// }
+
+// circulateAge()
+
+// function ageInSeconds() {
+//     // Prompt user to enter their birthdate
+//     const birthdate = prompt("Enter your birthdate (YYYY-MM-DD):");
+    
+//     // Get the current date
+//     const currentDate = new Date();
+    
+//     // Convert birthdate string to Date object
+//     const birthDateObj = new Date(birthdate);
+    
+//     // Check if the birthdate is valid
+//     if (isNaN(birthDateObj)) {
+//         alert("Invalid birthdate format. Please enter in YYYY-MM-DD format.");
+//         return;
+//     }
+    
+//     // Calculate the difference in milliseconds
+//     const differenceInMillis = currentDate - birthDateObj;
+    
+//     // Convert milliseconds to seconds
+//     const ageInSeconds = Math.floor(differenceInMillis / 1000);
+    
+//     return ageInSeconds;
+// }
+
+// // Call the function and display the result
+// const age1 = ageInSeconds();
+// if (age1 !== undefined) {
+//     alert("Your age in seconds: " + age1);
+// }
+
+
+//Exercises III
+
+const todayIs = () => {
+    const now = new Date();
+
+    // Format the time components (hours, minutes, seconds)
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+
+    // Format the date components (year, month, day)
+    const year = now.getFullYear();
+    const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Month is zero-based
+    const day = now.getDate().toString().padStart(2, '0');
+
+    // Create the formatted date and time string
+    const dateTimeString = `${year}-${month}-${day} | ${hours}:${minutes}:${seconds}`;
+
+    // Update the clock element with the formatted date and time
+    document.getElementById('todayIs').textContent = dateTimeString;
+}
+
+todayIs()
+
+setInterval(todayIs, 1000)
